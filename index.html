@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dream 11</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/application.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<script type="text/javascript" src="assets/js/materialize.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+</head>
+<body>
+	<div class="dream-container">
+		<img src="assets/images/d1.png" width="100%" height="100%">
+		<div class="process-container">
+			<div class="first-process">
+				<div class="coupon-sec">
+					<p>Coupon code - DREAM11500RUPAEZ</p>
+				</div>
+				<div class="mobile-no-sec">
+					<input type="text" name="mob" id="mobile-no" placeholder="Mobile number" />
+				</div>
+				<div class="verify-btn-sec">
+					<button class="verify-btn" onclick="getAuthKey()">Apply Coupon And Generate Key</button>
+				</div>
+			</div>
+			<div class="second-process" style="display: none;">
+				<div class="message-sec">
+					<p>Server key has been generated successfully.</p>
+				</div>
+				<div class="key-sec">
+					<div class="key"><span class="fa fa-circle"></span></div>
+					<div class="key"><span class="fa fa-circle"></span></div>
+					<div class="key"><span class="fa fa-circle"></span></div>
+					<div class="key"><span class="fa fa-circle"></span></div>
+					<div class="key"><span class="fa fa-circle"></span></div>
+				</div>
+				<div class="show-prank-sec">
+					<button class="show-prank-btn" onclick="showPrank()">Credit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="prank-container" style="display: none;">
+		<div class="gif-sec">
+			<img src="assets/gifs/giphy.gif">
+		</div>
+		<div class="prant-content-sec">
+			<p class="prank-text">Still Confused?? You are pranked (:P)</p>
+			<p class="prank-share">Don't spoil the fun. Share and do prank everyone.</p>
+			<p class="prank-hint">Anyone asked about result, tell them server is busy</p>
+		</div>
+		<div class="gif-sec">
+			<img src="assets/gifs/e4.gif">
+		</div>
+	</div>
+	<div id="modal" class="modal">
+	    <div class="modal-content">
+	    </div>
+	    <div class="modal-footer">
+	      <a id="modal-close" class="modal-close waves-effect waves-green btn-flat">OK</a>
+	    </div>
+	</div>
+	<script type="text/javascript" src="assets/js/application.js"></script>
+</body>
+</html>

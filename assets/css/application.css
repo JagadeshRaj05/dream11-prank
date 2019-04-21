@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	height: 100vh;
+}
+.dream-container {
+	height: 100%;
+}
+#modal-close{
+	background-color: #E24534;
+	color: white;
+}
+.process-container {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+}
+input[type="text"] {
+	font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+input[type="text"]:focus {
+	border-color: #E24534 !important; 
+}
+.coupon-sec p, .message-sec p {
+	color: white;
+}
+.verify-btn, .verify-btn:focus, .verify-btn:active, .show-prank-btn, .show-prank-btn:focus, .show-prank-btn:active {
+    margin-top: 10px;
+    background-color: #E24534;
+    padding: 10px;
+    color: white;
+    border-color: #E24734;
+    outline: none;
+}
+.key-sec {
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+.key {
+    width: 25px;
+    height: 25px;
+    background: white;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+.key span {
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #5f5c5c;
+}
+.prank-container {
+	height: 100%;
+	text-align: center;
+}
