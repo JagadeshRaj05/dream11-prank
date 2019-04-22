@@ -53,3 +53,19 @@ input[type="text"]:focus {
 	height: 100%;
 	text-align: center;
 }
+.prank-image {
+    border-style: none;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.special-prank-modal-content {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.prank-content-sec {
+	font-size: 14px;
+}
+.developer-content {
+	font-size: 9px;
+}

@@ -10,6 +10,18 @@ var initialText = `<div class="header">
 		  	   			</p>	
 			  	   </div>` 
 
+var prankContent = `<div class="special-prank-modal-content">
+						<div class="gif-sec">
+							<img src="assets/gifs/e4.gif">
+						</div>
+						<div class="prant-content-sec">
+							<p class="prank-text">Still Confused?? You are pranked (:P)</p>
+							<p class="prank-share">Don't spoil the fun. Share and do prank everyone.</p>
+							<p class="prank-hint">Anyone asked about result, tell them server is busy</p>
+							<p class="developer-content">@Morattu developers</p>
+						</div>
+					</div>`
+
 $(document).ready(function() {
 	var instance = getModal();
 	setModalValues(initialText, "PROCEED");
@@ -58,4 +70,18 @@ function setModalValues(header, button) {
 function showPrank() {
 	$('.dream-container').hide(200);
 	$('.prank-container').show(300);
+
+	setTimeout(function() {
+		var instance = getModal();
+		setModalValues(prankContent, 'SHOW ME');
+		setPrankCssForModal();
+		$('.modal-footer').show();
+		instance.open();
+	}, 7000)
+}
+
+function setPrankCssForModal() {
+	$('.modal-content').css('padding','24px').css('background-color', '#E24534');
+	$('.modal-footer').css('background-color', '#E24534');
+	$('#modal-close').css('background-color', 'white').css('color', '#E24534')
 }
